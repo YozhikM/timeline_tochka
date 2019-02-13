@@ -1,0 +1,28 @@
+{
+  "name": "timeline_tochka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YozhikM/timeline_tochka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YozhikM/timeline_tochka/issues"
+  },
+  "homepage": "https://github.com/YozhikM/timeline_tochka#readme",
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.0"
+  }
+}
