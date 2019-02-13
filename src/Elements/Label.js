@@ -1,5 +1,5 @@
-import React from "react"
+import React from "react";
 
-const Label = ({ text }) => <h4>{text}</h4>
+const Label = ({ text }) => <h4>{text}</h4>;
 
-export default Label
+export default Label;

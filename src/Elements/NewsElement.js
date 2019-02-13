@@ -1,27 +1,27 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
 
 class NewsElement extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       isCollapsed: true
-    }
-    this.onToggleVisibility = this.onToggleVisibility.bind(this)
-    this.onChangeCollapsedStatus = this.onChangeCollapsedStatus.bind(this)
+    };
+    this.onToggleVisibility = this.onToggleVisibility.bind(this);
+    this.onChangeCollapsedStatus = this.onChangeCollapsedStatus.bind(this);
   }
 
   onToggleVisibility() {
-    this.props.onToggleVisibility(this.props.event.id)
+    this.props.onToggleVisibility(this.props.event.id);
   }
 
   onChangeCollapsedStatus() {
-    this.setState(prevState => ({ isCollapsed: !prevState.isCollapsed }))
+    this.setState(prevState => ({ isCollapsed: !prevState.isCollapsed }));
   }
 
   render() {
-    const { event } = this.props
-    const backgroundColor = event.isHided ? "#64B5F6" : "#1E88E5"
+    const { event } = this.props;
+    const backgroundColor = event.isHided ? "#64B5F6" : "#1E88E5";
     return (
       <div className="timeline_item">
         <div className="timeline_item_milestone" />
@@ -45,8 +45,8 @@ class NewsElement extends Component {
           {!this.state.isCollapsed && <p className="news_desc">{event.desc}</p>}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default NewsElement
+export default NewsElement;

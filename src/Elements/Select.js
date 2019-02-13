@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Select = ({ value, onChange, options, name }) => (
   <select value={value} onChange={onChange} className="form_select" name={name}>
@@ -8,6 +8,6 @@ const Select = ({ value, onChange, options, name }) => (
       </option>
     ))}
   </select>
-)
+);
 
-export default Select
+export default Select;

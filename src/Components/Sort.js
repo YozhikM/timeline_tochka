@@ -1,16 +1,16 @@
-import React from "react"
+import React from "react";
 
-import Select from "./Elements/Select"
+import Select from "../Elements/Select";
 
 export const sortOptions = {
   dateAsc: "Сначала новые",
   dateDesc: "Сначала старые",
   transactions: "Только транзакции",
   news: "Только новости"
-}
+};
 
 const Sort = ({ sortValue, onChange }) => {
-  const options = Object.keys(sortOptions).map(key => sortOptions[key])
+  const options = Object.keys(sortOptions).map(key => sortOptions[key]);
 
   return (
     <Select
@@ -19,7 +19,7 @@ const Sort = ({ sortValue, onChange }) => {
       value={sortValue}
       onChange={onChange}
     />
-  )
-}
+  );
+};
 
-export default Sort
+export default Sort;

@@ -1,7 +1,7 @@
-import React, { Fragment } from "react"
+import React, { Fragment } from "react";
 
-import TransactionElement from "./Elements/TransactionElement"
-import NewsElement from "./Elements/NewsElement"
+import TransactionElement from "../Elements/TransactionElement";
+import NewsElement from "../Elements/NewsElement";
 
 const Timeline = ({ events, onToggleVisibility, onRemove }) => (
   <Fragment>
@@ -13,7 +13,7 @@ const Timeline = ({ events, onToggleVisibility, onRemove }) => (
             event={event}
             onRemove={onRemove}
           />
-        )
+        );
       }
       if (event.eventType === "news") {
         return (
@@ -22,11 +22,11 @@ const Timeline = ({ events, onToggleVisibility, onRemove }) => (
             event={event}
             onToggleVisibility={onToggleVisibility}
           />
-        )
+        );
       }
-      return null
+      return null;
     })}
   </Fragment>
-)
+);
 
-export default Timeline
+export default Timeline;

@@ -4,7 +4,7 @@ export const eventTypes = {
       label: "Сумма транзакции",
       required: true,
       auto: false,
-      type: 'number',
+      type: "number"
     },
     currency: {
       label: "Валюта",
@@ -61,10 +61,10 @@ export const eventTypes = {
       auto: true
     }
   }
-}
+};
 
 function getOptionsFromEventTypes() {
-  return Object.keys(eventTypes).map(key => key)
+  return Object.keys(eventTypes).map(key => key);
 }
 
-export const options = getOptionsFromEventTypes()
+export const options = getOptionsFromEventTypes();
