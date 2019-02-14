@@ -76,7 +76,6 @@ export default class App extends Component {
 
       return { events };
     });
-    this.applySort();
   }
 
   onSubmit(event) {
